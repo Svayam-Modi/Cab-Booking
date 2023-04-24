@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cab.rideEstimation">
+   <children>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="64.0" prefWidth="202.0" text="Rapid Cabs">
+               <font>
+                  <Font name="Segoe Print" size="35.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <Pane prefHeight="160.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle arcHeight="25.0" arcWidth="25.0" fill="WHITE" height="200.0" layoutX="170.0" layoutY="21.0" stroke="BLACK" strokeType="INSIDE" width="287.0" />
+            <Text fill="#1894b4" layoutX="198.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Source :">
+               <font>
+                  <Font name="Segoe Print" size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="source" layoutX="242.0" layoutY="79.0" prefHeight="25.0" prefWidth="187.0" promptText="Enter Source Here" />
+            <Text fill="#1894b4" layoutX="198.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Destination :">
+               <font>
+                  <Font name="Segoe Print" size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="destination" layoutX="242.0" layoutY="174.0" prefHeight="25.0" prefWidth="187.0" promptText="Enter Destination Here" />
+            <ImageView fitHeight="77.0" fitWidth="27.0" layoutX="198.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../route.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="book" layoutX="192.0" layoutY="247.0" mnemonicParsing="false" onAction="#forwardToCarType" prefHeight="30.0" prefWidth="66.0" text="Book">
+               <font>
+                  <Font name="Segoe Print" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="Back" layoutX="299.0" layoutY="247.0" mnemonicParsing="false" onAction="#back" prefHeight="30.0" prefWidth="68.0" text="Back">
+               <font>
+                  <Font name="Segoe Print" size="12.0" />
+               </font>
+            </Button>
+                  <Button fx:id="reset" layoutX="411.0" layoutY="247.0" mnemonicParsing="false" onAction="#reset" prefHeight="30.0" prefWidth="68.0" text="Reset">
+                     <font>
+                        <Font name="Segoe Print" size="12.0" />
+                     </font>
+                  </Button>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
+</children>
+</Pane>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cab.cardDetailController">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+         <top>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label prefHeight="64.0" prefWidth="208.0" text="Rapid Cabs">
+                     <font>
+                        <Font name="Segoe Print" size="35.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </top>
+         <center>
+            <Pane prefHeight="160.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="104.0" layoutY="-19.0" prefHeight="30.0" prefWidth="424.0" text="&quot;The Fastest Way to Reach the Destination&quot;" textAlignment="CENTER" textFill="#d33bd3">
+                     <font>
+                        <Font name="Lucida Sans Italic" size="20.0" />
+                     </font>
+                  </Label>
+                  <Rectangle arcHeight="35.0" arcWidth="35.0" fill="WHITE" height="238.0" layoutX="206.0" layoutY="55.0" stroke="#0401ae" strokeType="INSIDE" width="200.0" />
+                  <TextField layoutX="232.0" layoutY="70.0" promptText="Card Holder Name">
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font>
+                  </TextField>
+                  <TextField layoutX="232.0" layoutY="106.0" promptText="Card Number">
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font>
+                  </TextField>
+                  <TextField layoutX="232.0" layoutY="143.0" prefHeight="25.0" prefWidth="64.0" promptText="CVV">
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font>
+                  </TextField>
+                  <TextField layoutX="306.0" layoutY="143.0" prefHeight="25.0" prefWidth="72.0" promptText="EXP DATE">
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font>
+                  </TextField>
+                  <TextField layoutX="232.0" layoutY="182.0" promptText="POSTAL CODE">
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="payNow" layoutX="269.0" layoutY="225.0" mnemonicParsing="false" onAction="#onPaynow" prefHeight="43.0" prefWidth="72.0" text="Pay Now" />
+                  <Text layoutX="154.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please Enter Your Card Detail" wrappingWidth="336.3726501464844">
+                     <font>
+                        <Font name="Segoe Print" size="21.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="back" layoutX="534.0" layoutY="268.0" mnemonicParsing="false" onAction="#back" prefHeight="25.0" prefWidth="53.0" text="Back" />
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+   </children>
+</Pane>

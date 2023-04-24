@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cab.Cartype">
+   <children>
+      <Label layoutX="181.0" layoutY="49.0" text="Rapid Cabs" textFill="#714242" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Bell MT Italic" size="49.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="rb1" layoutX="244.0" layoutY="182.0" mnemonicParsing="false" text="Normal">
+         <toggleGroup>
+            <ToggleGroup fx:id="CabType" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rb2" layoutX="245.0" layoutY="219.0" mnemonicParsing="false" text="SUV" toggleGroup="$CabType" />
+      <RadioButton fx:id="rb3" layoutX="245.0" layoutY="252.0" mnemonicParsing="false" text="Luxury" toggleGroup="$CabType" />
+      
+      <Label alignment="CENTER" layoutX="203.0" layoutY="126.0" prefHeight="49.0" prefWidth="189.0" text="Select Car Type" textAlignment="CENTER">
+         <font>
+            <Font name="Bodoni MT Condensed Bold Italic" size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="payNow" layoutX="195.0" layoutY="294.0" mnemonicParsing="false" onAction="#SelectPayment" prefHeight="25.0" prefWidth="72.0" text="Pay Now" />
+      <Button fx:id="back" layoutX="318.0" layoutY="294.0" mnemonicParsing="false" onAction="#back" text="Back" />
+   </children>
+</Pane>

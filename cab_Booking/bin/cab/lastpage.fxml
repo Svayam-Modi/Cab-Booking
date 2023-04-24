@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cab.cardDetailController">
+   <top>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="64.0" prefWidth="208.0" text="Rapid Cabs">
+               <font>
+                  <Font name="Segoe Print" size="35.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <Pane prefHeight="160.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="104.0" layoutY="-19.0" prefHeight="30.0" prefWidth="424.0" text="&quot;The Fastest Way to Reach the Destination&quot;" textAlignment="CENTER" textFill="#d33bd3">
+               <font>
+                  <Font name="Lucida Sans Italic" size="20.0" />
+               </font>
+            </Label>
+            <Text layoutX="72.0" layoutY="181.0" stroke="#101010" strokeType="OUTSIDE" strokeWidth="0.0" text="Thank You for Choosing Rapid Cabs" wrappingWidth="452.5366668701172">
+               <font>
+                  <Font name="Segoe Print" size="25.0" />
+               </font>
+            </Text>
+            <Label layoutX="7.0" layoutY="22.0" prefHeight="66.0" prefWidth="584.0" text="Our driver will arrive shortly to pickup location" textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe Print Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
